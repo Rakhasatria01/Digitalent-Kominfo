@@ -1,0 +1,65 @@
+.card {
+    width: 1000px;
+}
+
+.garis {
+    width: 1000px;
+    background-color: rgba(240, 248, 255, 0);
+
+}
+
+.nav-link{
+    transition: .4s;
+}
+
+.nav-link:hover {
+    background-color: rgb(202, 201, 198);
+    width: 185px;
+    padding-left: 30px;
+}
+
+.navcollapse:hover {
+    background-color: rgb(202, 201, 198);
+    width: 150px;
+}
+
+.card-body-icon {
+    position: absolute;
+    z-index: 0;
+    top: 25px;
+    right: 4px;
+    opacity: 0.4;
+    font-size: 90px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+}
+
+.main {
+    z-index: 0;
+    margin-left: 228px;
+    /* Same as the width of the sidenav */
+    font-size: 15px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    max-width: 1129px;
+    min-height: 566px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
