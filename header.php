@@ -36,8 +36,14 @@ global $connect;
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./">Home</a>
+            <a type="button" class="btn btn-light" href="./">Home</a>
           </li>
+          <li class="nav-item">
+            <a type="button" class="btn btn-light" href="aboutme.php">About</a>
+<!--           </li>
+          <li class="nav-item"> -->
+            <a type="button" class="btn btn-light" href="admin/ceklogin.php">Login</a>
+          </li>
           <!-- Ambil Kategori Dari Database -->
           <!-- konfigurasi pagination -->
           <?php 
@@ -59,11 +65,8 @@ global $connect;
            ?>
           <?php while ( $row = mysqli_fetch_assoc($result) ) : ?>
           <li class="nav-item">
-            <a class="nav-link" href="./?open=cat&id=<?= $row['ID']; ?>"><?= $row['kategori']; ?></a>
+            <a type="button" class="btn btn-light" href="./?open=cat&id=<?= $row['ID']; ?>"><?= $row['kategori']; ?></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutme.php">About</a>
-          </li>
           <?php endwhile; ?>
         </ul>
       </div>
